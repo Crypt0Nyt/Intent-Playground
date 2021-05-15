@@ -17,17 +17,12 @@
 ## You can download the apk from [here]()
 
 ## Explicit Intent Preview:
-
-https://user-images.githubusercontent.com/59164922/118364515-57fff680-b5b6-11eb-9148-a35e22233e9d.mp4
-
-
-
-
+https://user-images.githubusercontent.com/59164922/118364622-cb096d00-b5b6-11eb-95ac-e64e983a0093.mp4
 
 ## Implicit Intent Preview:
-
-
-
-
+https://user-images.githubusercontent.com/59164922/118364696-2b98aa00-b5b7-11eb-9199-b2b5b404eb4d.mp4
 
 ## Sending and Receiving data:
+https://user-images.githubusercontent.com/59164922/118364710-3e12e380-b5b7-11eb-82a1-4f697a4a56bc.mp4
+
+
