@@ -32,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
         b.qty.setText(String.valueOf(qty)); //to show the text acc to the counter
         */
         Bundle bundle = getIntent().getExtras();
+        if(bundle == null)
+            return;
+        
         qty = bundle.getInt(Constants.INITIAL_COUNT_KEY,0);
         minVal = bundle.getInt(Constants.MIN_VALUE,Integer.MIN_VALUE);
         maxVal = bundle.getInt(Constants.MAX_VALUE,Integer.MAX_VALUE);
