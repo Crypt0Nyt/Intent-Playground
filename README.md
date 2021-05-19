@@ -14,7 +14,7 @@
 
 - Constant Keys & Bundle
 
-## You can download the apk from [here](https://github.com/Crypt0Nyt/Intent-Playground/releases/download/v0.1/app-debug.apk)
+## You can download the apk from [here](https://github.com/Crypt0Nyt/Intent-Playground/releases/download/v0.2/app-debug.apk)
 
 ## Explicit Intent Preview:
 https://user-images.githubusercontent.com/59164922/118364622-cb096d00-b5b6-11eb-95ac-e64e983a0093.mp4
