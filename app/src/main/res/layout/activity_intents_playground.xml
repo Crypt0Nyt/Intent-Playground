@@ -73,7 +73,8 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/data">
+        app:layout_constraintTop_toBottomOf="@id/data"
+        android:layout_marginStart="16dp">
 
         <RadioButton
             android:id="@+id/webpage"
@@ -123,7 +124,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:text="Sending &amp; Receiving data"
+        android:text="@string/sending_amp_receiving_data"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/group_divider" />
 
@@ -170,7 +171,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:text="TextView"
+        android:text="@string/textview"
         android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/initialCounterET" />

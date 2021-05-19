@@ -16,4 +16,6 @@
     <string name="initial_count">Initial Count</string>
     <string name="send">Send</string>
     <string name="send_back">Send Back</string>
+    <string name="sending_amp_receiving_data"><![CDATA[Sending & Receiving data]]></string>
+    <string name="textview">TextView</string>
 </resources>
