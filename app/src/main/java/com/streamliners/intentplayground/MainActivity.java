@@ -1,8 +1,10 @@
 package com.streamliners.intentplayground;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -24,6 +26,18 @@ public class MainActivity extends AppCompatActivity {
 
         setupEventHandlers();
         getInitialCount();
+
+//        Restore Instance State
+//        GEt from instance state
+        if(savedInstanceState != null){
+            qty = savedInstanceState.getInt(Constants.COUNT,0);
+        }
+        else{
+//            Create Preferences Reference
+            SharedPreferences prefs = getPreferences(MODE_PRIVATE);
+            qty = prefs.getInt(Constants.COUNT,0);
+        }
+        b.qty.setText(String.valueOf(qty));
     }
 
     private void getInitialCount() {
@@ -75,5 +89,21 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this,"Not in Range!",Toast.LENGTH_SHORT).show();
 
         }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putInt(Constants.COUNT,qty);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+//        Create preferences reference
+        SharedPreferences prefs = getPreferences(MODE_PRIVATE);
+        prefs.edit().putInt(Constants.COUNT,qty).apply();
     }
 }
